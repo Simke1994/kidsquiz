@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deciji kviz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--bojice-->
+    <link rel="stylesheet" href="css/bojice.css">
+    <script type="text/javascript" src="JS/bojice.js"></script>
+  </head>
+  <body>
+    <div id="ekran">
+      <a href="index.html" type="button" class="btn btn-success" id="dugme7"><span class="glyphicon glyphicon-home"></span> Pocetna</a>
+      <div class="naslov"><h1 class="pitanje" id="pitanjce">Koja je ovo boja? <img src="slike/slika11.png" id="krug"></h1></div>
+          <div class="container">
+          <button type="button" class="btn btn-success" id="dugme1" value="0" onclick="odgovor1();"></button>
+          <button type="button" class="btn btn-primary" id="dugme2" value="0" onclick="odgovor2();"></button><br><br>
+          <button type="button" class="btn btn-danger" id="dugme3" value="0" onclick="odgovor3();"></button>
+          <button type="button" class="btn btn-warning" id="dugme4" value="0" onclick="odgovor4();"></button>
+      </div>
+    </div>
+    <audio id="audio" src="zvuk/yesmusic.mp3"></audio>
+    <audio id="audio2" src="zvuk/nomusic.mp3"></audio>
+    <img src="slike/oh-no-panic.gif" id="panic">
+    <img src="slike/yes.gif" id="yes">
+  </body>
